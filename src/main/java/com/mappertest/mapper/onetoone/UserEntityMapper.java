@@ -4,6 +4,7 @@ import com.mappertest.bo.onetone.User;
 import com.mappertest.entity.onetone.UserEntity;
 import com.mappertest.mapper.IdMapper;
 import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 
 @Mapper(uses = {IdMapper.class, CartEntityMapper.class})
