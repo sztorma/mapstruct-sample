@@ -2,7 +2,7 @@ package com.mappertest.mapper;
 
 import org.mapstruct.Named;
 
-public abstract class IdMapper {
+public class IdMapper {
 
     @Named(value = "encrypt")
     public String encryptId(long id) {

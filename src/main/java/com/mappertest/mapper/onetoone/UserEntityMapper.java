@@ -12,11 +12,11 @@ public interface UserEntityMapper {
     
     UserEntityMapper INSTANCE = Mappers.getMapper(UserEntityMapper.class);
 
-    //@Mapping(target = "id", qualifiedByName = "encrypt")
-    //@Mapping(target = "cart", expression = "java(null)")
+    @Mapping(target = "id", qualifiedByName = "encrypt")
+    @Mapping(target = "cart", expression = "java(null)")
     User entityToBo(UserEntity entity);
     
-    //@Mapping(target = "id", qualifiedByName = "decrypt")
-    //@Mapping(target = "cart", expression = "java(null)")
+    @Mapping(target = "id", qualifiedByName = "decrypt")
+    @Mapping(target = "cart", expression = "java(null)")
     UserEntity boToEntity(User bo);
 }

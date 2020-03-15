@@ -12,11 +12,11 @@ public interface CartEntityMapper {
 
     CartEntityMapper INSTANCE = Mappers.getMapper(CartEntityMapper.class);
     
-    //@Mapping(target = "id", qualifiedByName = "encrypt")
-    //@Mapping(target = "user", expression = "java(null)")
+    @Mapping(target = "id", qualifiedByName = "encrypt")
+    @Mapping(target = "user", expression = "java(null)")
     Cart entityToBo(CartEntity entity);
 
-    //@Mapping(target = "id", qualifiedByName = "decrypt")
-    //@Mapping(target = "user", expression = "java(null)")
+    @Mapping(target = "id", qualifiedByName = "decrypt")
+    @Mapping(target = "user", expression = "java(null)")
     CartEntity boToEntity(Cart bo);
 }
